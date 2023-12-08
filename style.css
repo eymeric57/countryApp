@@ -1,16 +1,12 @@
 * {
   margin: 0;
 }
-body {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 90%;
-}
+
 
 .filter-container {
   text-align: center;
   padding-bottom: 20px;
+
 }
 input {
   margin: 20px auto;
@@ -38,11 +34,14 @@ input[type="range"] {
 }
 
 .countries-container {
- 
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  width: 90%;
 }
-
-.country {
-
+.countryBox {
+  margin: 200px auto;
+  flex: 1 0 20%;
   margin: 10px;
   padding: 20px 20px 0;
   text-align: center;
@@ -55,4 +54,25 @@ input[type="range"] {
   min-height: 260px;
   display: grid;
   overflow: hidden;
+
 }
+
+.country {
+  display: grid;
+  grid-template-rows: 1fr 100px 100px 100px;
+padding: 20px;
+}
+
+.countryName {
+  margin-top: 40px;
+}
+
+.capital {
+  margin-top: 20px;
+}
+
+.population {
+  height: 50px;
+}
+
+
