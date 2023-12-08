@@ -28,7 +28,7 @@ const countryDisplay = async () => {
             <img src="${countries.flags.png}">
         </div>
         <div class="countryName">
-                <h2>${countries.name.common}</h2>
+                <h2>${countries.translations.fra.common}</h2>
         </div>
         <div class="capital">
                 <h3>${countries.capital}</h3>
